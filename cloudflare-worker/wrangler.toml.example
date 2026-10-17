@@ -1,0 +1,12 @@
+name = "nordvolt-tilbud"
+main = "worker.js"
+compatibility_date = "2026-10-18"
+
+# Opret en KV namespace i Cloudflare og indsæt det rigtige ID.
+[[kv_namespaces]]
+binding = "LEADS_KV"
+id = "INDSAET_KV_NAMESPACE_ID"
+
+[vars]
+# Præcis origin, uden afsluttende / (brug komma til flere domæner)
+ALLOWED_ORIGIN = "https://DITBRUGERNAVN.github.io"
